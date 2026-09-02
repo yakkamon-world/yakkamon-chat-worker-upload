@@ -1,0 +1,16 @@
+{
+  "name": "yakkamon-chat-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker behind the Ask-me-anything bar on yakkamonworld.com",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secret": "wrangler secret put ANTHROPIC_API_KEY",
+    "test": "node test-local.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
